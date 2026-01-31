@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EventHorizon - Local Event Discovery Platform
+
+A modern, premium Event Discovery web application built with Next.js 15, Tailwind CSS v4, and Shadcn UI.
+
+## Features
+
+- **Modern UI/UX**: Glassmorphism, smooth transitions, and premium design.
+- **Dark Mode**: Fully supported with system preference detection.
+- **Event Discovery**: Search, Filter by Category/Price, and Map View (placeholder).
+- **Event Details**: Rich event pages with detailed info and related events.
+- **Create Event**: Form to host your own events.
+- **Authentication**: Login/Signup pages (UI built, ready for NextAuth integration).
+- **Dashboard**: User dashboard to manage events and tickets.
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS v4
+- **Components**: Shadcn UI (Radix Primitives)
+- **Icons**: Lucide React
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+1. **Install Dependencies**:
+   ```bash
+   bun install
+   # or
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run Development Server**:
+   ```bash
+   bun run dev
+   # or
+   npm run dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open Browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app`: App Router pages and layouts.
+- `src/components`: Reusable UI components.
+  - `ui/`: Primitives (Button, Card, Input, etc.).
+  - `navbar.tsx`, `footer.tsx`: Layout components.
+- `src/lib`: Utilities and configurations (utils.ts, auth.ts).
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Colors**: Edit `src/app/globals.css` to change the CSS variables for the theme (Primary: Indigo/Violet).
+- **Fonts**: Uses `Inter` via `next/font/google`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built by Antigravity
